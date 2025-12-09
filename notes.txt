@@ -1,0 +1,272 @@
+9th Dec 2025
+============
+
+    -> Python 
+
+        -> Full Stack Development           : Django (Web App Development)
+
+        -> Data Analytics / Data Science    : Data Operations (Numpy, Pandas, Pytorch)
+
+        -> DevOps / Cloud                   : Scripting / Automation (OS, Sys, Boto3)
+
+    
+    -> Python which is common for all above courses [35 - 40 Days]
+
+        -> Python Language Fundamentals    
+
+    -> Python 
+
+        -> Python is a high-level, general-purpose programming language. 
+        Its design philosophy emphasizes code readability with the use of 
+        significant indentation. Python is dynamically type-checked and garbage-collected.
+
+    -> Python is a "high-level" programming language
+
+        -> High Level Languages are "Human Understandable" Language (English)
+
+            -> python code looks like English
+
+                -> sum = num1 + num2 
+
+        -> Low Level Language
+
+            -> Low Level Languages are "Machine Understandable" Language (Binary)
+
+                -> 010010110101111
+
+            -> 01110000 01111001 01110100 01101000 01101111 01101110 -> python
+    
+    -> Python is a "general-purpose" programming language
+
+        -> If i can do multiple specific types of tasks / Applications 
+
+        -> Using Python, we can develop different types of Applications 
+
+            -> Desktop applications ? Yes
+
+            -> Web Applications ? Yes 
+
+            -> Data Oriented Applications ? Yes 
+
+            -> API's ? Yes 
+
+            -> Automation Scripts ? Yes 
+
+        -> Domain Specific programming language
+
+            -> If i can do only specific types of tasks / Applications 
+
+            -> SQL: Structured Query Language is a domain-specific language 
+                used to manage data, especially in a relational database management system. 
+
+
+    -> Python design philosophy emphasizes "code readability" with the use of 
+        significant "indentation".
+
+        -> code readability
+
+            Java Code 
+            ---------
+
+            class Main {
+                public static void main(String[] args) {                    
+                    int first = 10;
+                    int second = 20;
+                    // add two numbers
+                    int sum = first + second;
+                    System.out.println(first + " + " + second + " = "  + sum);
+                }
+            }
+
+                class 
+                public 
+                static 
+                void 
+                String 
+                []
+                {}
+                ; 
+
+            
+            Python Code
+            -----------
+
+            first = 10
+            second = 20
+            sum = first + second
+            print(sum)
+
+        -> indentation
+
+            -> indentation refers to code Structuring 
+
+            -> Python uses "spaces" for indentation 
+
+
+    -> Python is dynamically type-checked and garbage-collected
+
+        -> Python is Dynamically type-checked
+
+            -> We Have Data Types in programming languages 
+
+            -> Data Type: Categorization Of Data 
+
+                -> whole numbers, text, decimal numbers etc 
+
+            -> Dynamically type-checked means, no need to explicitly 
+                specify Data Types 
+
+                -> product = "Apple Iphone"
+                -> price = 60000
+                -> rating = 4.5 
+                -> etc 
+
+        -> Java is Static type-checked
+
+            -> Static type-checked means, you need to explicitly 
+                specify Data Types 
+
+                -> String product = "Apple Iphone";
+                -> int price = 60000;
+                -> double rating = 4.5 ;
+                -> etc 
+        
+        -> Python is garbage-collected
+
+            -> Removing / Cleaning Unused Data 
+
+            -> Python Automatically cleans up Unused Data / Memory 
+
+                -> product = "Apple Iphone"
+                -> price = 60000
+                -> rating = 4.5 
+
+                -> print(product)
+                -> print(price)
+
+                -> NOTE: Python cleans up rating, as it's never used 
+
+    -> Python is "Interpreted" Language 
+
+        -> An Interpreted Language executes code "Line By Line"
+
+    -> Java is "Compiled" Language
+
+        -> An Compiled Language executes code "All at once"
+
+    -> NOTE: Performance wise "Compiled Languages" are "FASTER"
+
+    -> Considering above criteria, still why Python ?
+
+        -> Python Has Vast Eco System Of Libraries 
+
+        -> Python is Easy To Learn / Develop / Code Readability
+
+        -> NOTE: Python is best "PROTO TYPE LANGUAGE" 
+
+            -> With Python We Don't focus on SPEED OF Applications (Performance)
+
+            -> With Python We focus on SPEED OF Development (Less Time To Develop)
+
+    
+    -> Programming Paradigms 
+
+        -> A programming paradigm is a relatively high-level way to 
+            conceptualize and structure the implementation of a computer program.
+
+            -> Problem: How To Reach Institute ?
+
+                -> Solution 1: I'll come by Walk 
+                -> Solution 2: I'll come by Bike
+                -> Solution 3: I'll come by Bus 
+
+        -> NOTE: Python supports multiple programming paradigms
+
+        -> We have Two Popular programming paradigms
+
+            -> Imperative Approach 
+
+                -> Focus in on "HOW To DO" 
+
+                    -> Object Oriented Programming (OOP)
+
+            -> Declarative Approach 
+
+                -> Focus in on "WHAT To DO" 
+
+                    -> Functional Programming 
+
+            -> Imperative Code With Python 
+
+                def get_user_emails(users):
+                        emails = []  # Step-by-step building the result
+
+                        for i in range(len(users)):         # Loop manually
+                            user = users[i]                 # Fetch each user
+
+                            if user.get("email") is not None:   # Check condition manually
+                                emails.append(user["email"])    # Manually add to list
+
+                        return emails
+
+
+                    # Sample users list
+                    users = [
+                        {"name": "Mike", "email": "mike@gmail.com"},
+                        {"name": "John", "email": None},
+                        {"name": "Sara", "email": "sara@gmail.com"}
+                    ]
+
+                    print(get_user_emails(users))
+
+
+            -> Declarative Code With Python 
+
+                emails = [u["email"] for u in users if u["email"] is not None]
+
+
+    -> Key Features Of Python / Why Python ?
+
+        -> Simple & Easy Readability
+
+        -> Versatility 
+
+            -> Data Oriented / Full Stack / Cloud etc 
+
+        -> Multiple programming paradigm support (OOP / Functional)
+
+        -> Dynamically Typed 
+
+        -> Open Source (FREE)
+
+        -> High Level Language (English Like)
+
+        -> List Of Popular Applications, Where Python is used 
+
+            -> https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites   
+
+
+    -> System Requirements For This Course 
+
+        -> Hardware 
+
+            -> i3 / i5 processor 
+            -> 4 GB RAM / 8 GB RAM 
+            -> 500 GB HDD 
+
+        -> Softwares 
+
+            -> Python Interpreter 
+
+                -> Install Python i.e Python Interpreter 
+                
+                -> https://www.python.org/
+
+            -> IDE  
+
+                -> Integrated Development Environment 
+
+                -> Tool for Writing Code (syntax highlight, auto code completion, plugins etc )
+
+                -> Visual Studio Code (VS Code) - Software To Install 
+
