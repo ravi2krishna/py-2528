@@ -270,3 +270,164 @@
 
                 -> Visual Studio Code (VS Code) - Software To Install 
 
+
+11th Dec 2025
+=============
+
+    -> Python Setup 
+
+        -> open command prompt (windows)
+
+            -> python --version
+
+                -> if not found, install 
+
+            -> Install from https://www.python.org/
+
+            -> After installing python, close command prompt and re-open 
+
+                -> python --version
+
+
+    -> Where To Write Python Code ?
+
+        -> Command Line Mode (Not Recommended)
+
+            -> We write code in command prompt 
+
+            -> Temporary, once we close the session all code is reset 
+
+                -> python 
+
+        -> Script Mode (Recommended)
+
+            -> We write code in files using IDE i.e Visual Studio Code 
+
+            -> Permanently stored on Disk 
+
+    
+    -> How To Write Python Code ?
+
+        -> Any programming language has "Syntax" (Rules)
+
+        -> Comparing programming language with english language
+
+            -> i taking class now today at 8:00 AM now (incorrect)
+
+            -> i'm taking class today at 8:00 AM (correct)
+
+        -> Learn English 
+
+            -> English has 26 Alphabets (abcd.......z)
+
+            -> Using these Alphabets, we form Words, then Sentences, then Paragraphs 
+                over a time with experience 
+
+        -> Learn Python 
+
+            -> Python has 35 "Keywords" (Which are equivalent to English Alphabets)
+
+            -> Using these Keywords, we form Statements Using some syntax / rules 
+
+            -> List Of Python keywords
+
+                -> https://docs.python.org/3/reference/lexical_analysis.html#keywords
+
+                    False      await      else       import     pass
+                    None       break      except     in         raise
+                    True       class      finally    is         return
+                    and        continue   for        lambda     try
+                    as         def        from       nonlocal   while
+                    assert     del        global     not        with
+                    async      elif       if         or         yield
+
+                -> NOTE: All the above keywords hold some special meaning to Python Interpreter
+
+
+    -> Python Rules / Syntax 
+
+        -> Any python file goes with .py as extension 
+
+        -> Python Ignores lines what start with # 
+
+        -> Comments are represented using # 
+
+        -> Rules 
+
+            -> When working with numeric values (1,2,1.0,2.5 etc)
+                we can directly use numerics with print()
+
+            -> When working with text data, in python text data 
+                is called as String 
+
+                -> Strings are represented using " " or ' '
+
+
+    -> Identifiers 
+
+        -> An identifier is a "name" used to uniquely identify
+
+            -> Variable 
+            -> Function 
+            -> Class 
+            -> Object 
+            -> etc 
+
+        -> Identifiers Rules 
+
+            -> Can Contain
+
+                -> Letters (a-z A-Z)
+                -> Digits (0-9)
+                -> Special Symbols ( _ Only underscore)
+
+            -> Must Start With 
+
+                -> A letter or _ (underscore)
+
+        -> NOTE: Always use proper way of naming identifiers 
+
+    
+    -> Variables 
+
+        -> Variable is a named memory location in computers memory (RAM),
+            that holds some value or data 
+
+            -> Computer -> RAM -> Variables 
+
+        -> Syntax 
+
+            variable_name = value 
+
+                -> variable_name should follow identifier rules 
+                -> = called as Assignment Operator 
+                -> value is data that you want to store 
+            
+            data = 10 
+    
+        -> Variables Allow You To 
+
+            -> Assign Data (Store Data)
+
+            -> Retrieve Data (Get Data)
+
+            -> Manipulate Data (Change Data)
+
+        -> Combine Variables with your custom statements 
+
+            -> Concatenation: Joining String using + operator
+
+            -> When Combining String With Other Data Types like int, float etc use , operator 
+
+        -> We can verify memory location of value 
+
+            -> use id() function 
+
+        -> Python Memory Model 
+
+            -> If a value is already present, python will not create a memory block
+                again for the same value, rather it references existing memory block
+
+        -> To Know Data Type In Python 
+
+            -> use type() function 
