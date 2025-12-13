@@ -431,3 +431,196 @@
         -> To Know Data Type In Python 
 
             -> use type() function 
+
+13th Dec 2025
+=============
+
+    -> Variables Allow You To 
+
+            -> Assign Data (Store Data)         -> DONE
+
+            -> Retrieve Data (Get Data)         -> DONE
+
+            -> Manipulate Data (Change Data)    -> DO 
+
+    -> Operators 
+
+        -> Operators are special "Symbols" and "keywords", 
+            which Performs Operations on Variables and their Values.
+
+        -> There are different types of operator, 
+            to deal with different types of data  
+
+        -> Arithmetic Operators
+
+            -> To Perform "Mathematical Calculations" 
+
+            -> + - * / % 
+            -> // - floor division (same as division but rounds off result)
+            -> ** - Exponentiation (used to Calculate powers)
+
+        -> Compound Assignment Operators
+
+            -> Assignment Operator is = (used for assigning a value to Variable)
+
+            -> Compound Assignment Operators Combines Arithmetic Operators 
+                with Assignment Operators for "short hand code" (concise code)
+
+                -> x = 10
+                
+                -> x = x + 5 (long form)
+                -> x = x * 5 (long form)
+
+                -> x += 5 (short form)
+                -> x *= 5 (short form)
+
+            -> In Other Programming Languages we got Increment & Decrement Operators
+
+                -> Increment (++)
+                -> Decrement (--)
+
+                -> NOTE: Above are not supported in python
+
+        
+        -> Comparison Operators
+
+            -> Comparison Operators are used for Comparing Values
+                and result is in boolean type (True/False)
+
+                -> Especially Used In "Conditional Checks"
+
+                -> ==, !=, >, <, >=, <= 
+
+        
+        -> Logical Operators
+
+            -> For Performing Logical Operations 
+
+            -> Used to check "multiple" conditions 
+                and result is in boolean type (True/False)
+
+            -> and : if both conditions are True, then only result is True, otherwise False 
+            -> or : if one of the conditions is True, then result is True, otherwise False 
+            -> not : negates the result, if true then false and vice versa 
+
+                            X       Y       X and Y    X or Y    not X    not Y
+                            T       T           T         T         F       F
+                            T       F           F         T         F       T
+                            F       T           F         T         T       F
+                            F       F           F         F         T       T 
+
+        -> Membership Operators
+
+            -> Used for checking if an object in in the given sequence 
+
+                -> in : return True, if given object is in sequence
+
+                -> not in : return True, if given object is not in sequence
+
+        -> Identity Operators 
+
+            -> Used for checking if both objects are same 
+
+                -> is : return True, if objects are same 
+
+                -> is not : return True, if objects are not same 
+
+
+        -> Bitwise Operators
+
+            -> Used in Low Level Programming (010101001)
+
+                -> & - if both bits are 1, then result is 1
+                -> | - if one the bits is 1, then result is 1
+                -> etc 
+
+    -> Setup An Python Application, for below EMI Functionality 
+
+        -> https://www.cardekho.com/mahindra/be-6
+
+        -> https://www.moneyseth.com/media/custom_blog/2021/05/05/emi-calculator_l9Xlp4V.png
+
+
+    -> Data Types 
+
+        -> Data Types are Categorization that defines, what kind of data a variable can hold 
+
+        -> Python is dynamic types language(assumes the type based on value)
+
+    -> Numeric Types
+
+        -> int : 1,2,3,0,-1,-2 etc 
+        
+        -> float : 3.5, 1.5, 2.1 1.0 etc 
+
+        -> complex: 
+
+            -> a + ib in maths ( i - imaginary )
+
+            -> a + bj in python 
+
+    -> Text Type 
+
+        -> str : String is a sequence of characters enclosed in ' ' or " "
+
+    -> Boolean Type
+
+        -> bool : Represents True / False (case sensitive)
+
+    -> None Type 
+
+        -> NoneType : Represents nothing i.e absence of value 
+    
+    -> Simple Data Types : Hold Single Value in a single variable
+
+    -> Complex Data Types : Hold Multiple Values in a single variable
+
+        -> Sequence Types 
+
+            -> List : List is complex data type i.e it holds multiple values
+                        represented using []
+
+            -> Tuple : Tuple is complex data type i.e it holds multiple values
+                        represented using ()
+
+        -> Set Type 
+
+            -> Set : Set is complex data type i.e it holds multiple values
+                        represented using { }
+
+            -> Frozenset : Frozenset is complex data type i.e it holds multiple values
+                            represented using class frozenset()
+
+        -> Map Type 
+
+            ->  Dictionary : dict is complex data type i.e it holds multiple key values
+                            represented using { } 
+
+    -> NOTE : All above data types are "pre-defined" in python standard library 
+
+    -> NOTE : Based on custom Requirements coming from users/customers, 
+                we can create our own data types i.e "user-defined"
+
+            -> syntax 
+
+                class CustomDataType:
+                    statements  
+
+    -> Type Conversion / Implicit Conversion [ Automatic ]
+
+        -> Converting One Data type to another data type, Automatically by Python 
+
+        -> Type Conversion is SAFE i.e no DATA LOSS 
+
+    -> Type Casting / Explicit Conversion [ Manual ]
+
+        -> Converting One Data type to another data type, Manually by Developer 
+
+        -> Type Casting is NOT SAFE i.e DATA LOSS might occur 
+
+        -> syntax
+
+            -> data_type(value) # casting functions
+            -> int(value) 
+            -> float(value) 
+            -> str(value) 
