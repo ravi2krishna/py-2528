@@ -624,3 +624,80 @@
             -> int(value) 
             -> float(value) 
             -> str(value) 
+
+16th Dec 2025
+=============
+
+    -> Control Structures / Control Statements
+
+        -> Control Structures helps you determine the "flow of execution" 
+            in a python program, allowing you to "make decisions" and "repeat tasks".
+
+        -> Python has given three types of Control Structures
+
+            -> Conditional Structures / Statements (Decision Making Statements)
+
+            -> Looping Structures / Statements (Iteration Statements)
+
+            -> Branching Structures / Statements (Jump Statements)
+    
+    -> NOTE: To Work with above Control Structures, "indentation" knowledge is must
+
+    -> Indentation
+
+        -> Indentation in Python is a fundamental and mandatory aspect of its "syntax", 
+            used to define the structure and hierarchy of code blocks. 
+            Unlike many other programming languages that use curly braces or keywords 
+            to structure blocks, Python relies entirely on "consistent" indentation.
+        
+        -> Using space as indentation (using spaces correctly is important)
+
+        -> Python allows for any consistent number of spaces or 
+            a single tab(4 spaces) for indentation, 
+            the widely accepted and recommended standard.
+
+                -> At least one space is must but recommended is 4 spaces i.e tab 
+
+
+    -> Conditional Structures / Statements (Decision Making Statements)
+
+        -> Used to run a "block of code" based on a condition result 
+
+            -> if 
+
+                -> runs a block of code, if the condition is True 
+
+                    -> syntax 
+                        if condition:
+                            statements 
+            
+            -> if else 
+
+                -> runs a block of code, if the condition is True 
+                    runs another block of code, if the condition is False 
+
+                    -> syntax 
+                        if condition:
+                            statements
+                        else:
+                            statements
+
+        -> NOTE: input(): reads input from user 
+
+        -> Interpolation 
+
+            -> Interpolation technique replaces, place holders with actual values dynamically
+
+                -> Using "f-strings" (Formatted String Literals)
+
+                    -> we use f with print and {} as place holders 
+        
+        -> The ternary operator in Python, also known as a "conditional expression", 
+            provides a concise way(short hand code) to write an 
+            if-else statement on a single line.
+             
+            It evaluates a condition and returns one of two values 
+            based on whether the condition is true or false.
+
+    -> syntax 
+        value_if_true if condition else value_if_false     
