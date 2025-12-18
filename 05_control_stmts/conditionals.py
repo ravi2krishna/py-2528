@@ -83,3 +83,51 @@ else:
 age = int(input("Enter Your Age: "))
 status = "You Can Vote" if age >= 18 else "You Cannot Vote"
 print(status)
+
+# Check If Passed or Not 
+marks = int(input("Enter Marks: "))
+if marks >= 35:
+    print("PASSED")
+else:
+    print("FAILED")
+    
+# elif ladder 
+# Check Grades A, B, C, D etc 
+marks = int(input("Enter Marks: "))
+if marks >= 90:
+    print("A Grade")
+elif marks >= 75:
+    print("B Grade")
+elif marks >= 60:
+    print("C Grade")
+elif marks >= 50:
+    print("D Grade")
+elif marks >= 35:
+    print("E Grade")
+else:
+    print("FAILED")
+    
+# match-case 
+choice = int(input("Enter Your Choice: (1-3)"))
+match choice:
+    case 1:
+        print("Option 1 Selected")
+    case 2:
+        print("Option 2 Selected")
+    case 3:
+        print("Option 3 Selected")
+    case _:
+        print("Unknown Option Selected")
+
+# match-case
+# Check Grades A, B, C, D etc
+marks = int(input("Enter Marks: "))
+match marks:
+    case marks if marks>=90:
+        print("A Grade")
+    case marks if marks>=75:
+        print("B Grade")
+    case marks if marks>=60:
+        print("C Grade")
+    case _:
+        print("Failed")

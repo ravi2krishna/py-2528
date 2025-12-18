@@ -701,3 +701,111 @@
 
     -> syntax 
         value_if_true if condition else value_if_false     
+
+
+18th Dec 2025
+=============
+
+    -> elif ladder 
+
+        -> elif is a keyword that stands for "else if" 
+
+        -> It is used in conditional statements to check "multiple conditions"
+            sequentially after an initial if statement
+
+        -> Syntax
+
+            if condition:
+                statements
+            elif condition:
+                statements
+            elif condition:
+                statements
+            elif condition:
+                statements
+            elif condition:
+                statements
+            else:
+                statements
+    
+    -> match-case 
+
+        -> Offers a more expressive and readable alternative to 
+            complex if-elif-else chains 
+
+        -> Introduced from Python 3.X
+
+        -> In other languages like java / C++ we have (switch case) 
+
+        -> syntax 
+
+            match expression:
+                case pattern_1:
+                    # code block 1    
+                case pattern_2:
+                    # code block 2
+                case pattern_3:
+                    # code block 3
+                .
+                .
+                .
+                case _:
+                    # default code block
+    
+    -> Nested Conditionals 
+
+        -> Conditionals inside Conditionals
+
+    -> Looping Structures / Statements (Iteration Statements)
+
+        -> Loops in Python are used to "repeatedly" execute a block of code
+
+        -> When you want to do a task multiple times, use loops 
+
+        -> Python offers two primary types of loops
+            
+            -> "while" loops 
+
+            -> "for" loops
+
+        -> "while" loops 
+
+            -> while loops execute a block of code repeatedly 
+            as long as a specified condition remains True
+
+            -> We use while generally, when we don't know number of
+            Iterations/Repetitions in advance
+
+           -> syntax
+
+                while condition:
+                    statements 
+
+        -> for loop
+
+            -> for loops are used to iterate over a sequence 
+                (like a list, tuple, string, or range) 
+                or other iterable objects. 
+            
+            -> NOTE: For loop executes a block of code once for each item in the sequence. 
+            
+            -> syntax 
+
+                for variable in sequence:
+                    statement
+
+            -> We use "for" loop generally, when we know number of Iterations in advance 
+
+        -> range() 
+
+                -> The range() function in Python generates an immutable sequence of numbers. 
+                It is commonly used for iterating a specific number of times in for loops. 
+
+                -> range(start, stop, step): This form generates a sequence of numbers starting 
+                from start (inclusive) up to, but not including, the stop value, 
+                with an increment of step. The step can be positive or negative.
+
+                    range(start, stop, step)
+                        -> start default is 0 (included) (inclusive)
+                        -> stop at this value (excluded) (exclusive)
+                        -> step is increment (default step is 1)
