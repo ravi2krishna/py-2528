@@ -809,3 +809,21 @@
                         -> start default is 0 (included) (inclusive)
                         -> stop at this value (excluded) (exclusive)
                         -> step is increment (default step is 1)
+
+20th Dec 2025
+=============
+
+    -> Nested Loops 
+
+        -> Loops Inside Loops 
+
+    -> Branching Structures / Statements (Jump Statements)
+
+        -> alter the flow of a program based on whether certain conditions are true or false
+
+        -> break: helps you exit the loops 
+
+        -> continue: helps you skip the current iteration 
+
+        -> pass: acts as placeholder, does nothing 
+
