@@ -937,3 +937,32 @@
             -> removed spaces - RAvi2krISHna
             -> transformed to lower - ravi2krishna
             -> updated to - ravi2krishna@gmail.com 
+
+
+27th Dec 2025
+=============
+
+    -> String Methods 
+
+    -> Simple Data Types 
+
+        -> Can Hold One Value in a single variable 
+
+            -> data = 10
+            -> data = 10.5
+            -> data = "hello"
+        
+    -> Complex Data Types 
+
+        -> Can Hold Multiple Values in a single variable 
+
+            -> data = 10,20,30,40,50
+            -> data = 10.5,2.4,1.0
+            -> data = "hello","hi","hey"
+
+    -> Python Provides Following Classes To Work with Complex Data Types 
+
+        -> List 
+        -> Tuple
+        -> Dictionary
+        -> Sets 
