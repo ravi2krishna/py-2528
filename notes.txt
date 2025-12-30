@@ -966,3 +966,134 @@
         -> Tuple
         -> Dictionary
         -> Sets 
+
+
+30th Dec 2025
+=============
+
+    -> List 
+
+        -> List is a data structure which allows you to store multiple values
+                in a single variable, each value is separated with , 
+
+        -> Lists are represented using [ ] or using "list" class
+
+        -> Accessing Data In Lists 
+
+            -> Like in Strings, we have index concept in Lists too 
+
+            -> Index Starts with Zero (0)
+
+            -> Supports Positive & Negative Index 
+
+            -> Indexing & Slicing same as strings 
+
+                -> string[start:end:step]
+
+            -> Looping We Can Apply 
+
+            -> Operators We Can Apply 
+
+            -> Conditionals We Can Apply 
+
+            -> Duplicates Allowed 
+
+            -> Order is preserved 
+
+    -> List Methods / Operations 
+
+    -> List Characteristics
+
+        -> Mutable: Lists are Mutable(List can be changed)
+
+        -> Ordered: Lists are Ordered (Insertion Order Preserved)
+
+        -> Duplicates: Lists allows Duplicates 
+
+    -> You Were storing multiple employees / students in list 
+
+    -> NOTE: Now we want to store employees / students AADHAR & PAN ID's 
+
+    -> For Above Requirement List is not a suitable data type, as lists can be modified 
+
+    -> Tuple
+
+        -> Tuple is a data structure which allows you to store multiple values
+            in a single variable, each value is separated with , 
+
+        -> Tuples are represented using ( ) or using "tuple" class
+
+        -> Accessing Data In Tuples 
+
+            -> Like in Strings, we have index concept in Tuples too 
+
+            -> Index Starts with Zero (0)
+
+            -> Supports Positive & Negative Index 
+
+            -> Indexing & Slicing same as strings 
+
+                -> string[start:end:step]
+
+            -> Looping We Can Apply 
+
+            -> Operators We Can Apply 
+
+            -> Conditionals We Can Apply 
+
+            -> Duplicates Allowed 
+
+            -> Order is preserved 
+
+    -> NOTE: Tuples are "IMMUTABLE" (Cannot be Changed i.e FIXED DATA)  
+
+    -> NOTE: Tuples are "READ ONLY LISTS"       
+
+    -> Tuples Methods / Operations 
+
+    -> Tuples Characteristics
+
+        -> Immutable: Tuples are Immutable(Tuples cannot be changed) (***)
+
+        -> Ordered: Tuples are Ordered (Insertion Order Preserved)
+
+        -> Duplicates: Tuples allows Duplicates 
+
+    -> Dictionaries 
+
+        -> Dictionary is a data structure which allows you to store multiple key values
+            in a single variable, each value is separated with , 
+
+            -> key & value (item / pair)
+
+                -> student dictionary 
+
+                    {"id":101,"fname":"ravi","lname":"krishna"}
+
+        -> Dictionaries are represented using { } or using "dict" class
+
+        -> Accessing Data In Dictionaries 
+
+            -> Like in Strings, we DON'T have index concept in Dictionaries
+
+            -> Indexing & Slicing doesn't support with Dictionaries
+
+            -> Looping We Can Apply 
+
+            -> Operators We Can Apply 
+
+            -> Conditionals We Can Apply 
+
+            -> Duplicates Allowed in Dictionaries with conditions
+
+                -> Values Can be Duplicated 
+
+                -> Keys Should Always be Unique 
+
+                -> Keys should be Immutable Objects Only 
+
+                -> Values can be any object 
+
+            -> Order is preserved 
+
+        -> Dictionary Methods / Operations 
