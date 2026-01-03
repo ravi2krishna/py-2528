@@ -1097,3 +1097,57 @@
             -> Order is preserved 
 
         -> Dictionary Methods / Operations 
+
+3rd Jan 2026
+=============
+
+    -> Dictionary Characteristics
+
+        -> Mutable: Dictionaries are Mutable (Dictionaries can be changed)
+
+        -> Ordered: Dictionaries are Ordered (Insertion Order Preserved)
+
+        -> Duplicates: Dictionaries allows Duplicate Values, but keys will be overridden
+
+    -> Sets 
+
+        -> Set is a data structure which allows you to store multiple values
+            in a single variable, each value is separated with , 
+
+        -> Sets are represented using { } or using "set" class
+
+        -> Accessing Data In Sets 
+
+            -> Like in Strings, we DON'T have index concept in Sets 
+
+                -> NOTE: Sets doesn't support indexing
+
+            -> Doesn't Support Positive & Negative Index 
+
+            -> Doesn't Support Indexing & Slicing 
+
+            -> Looping We Can Apply 
+
+            -> Operators We Can Apply 
+
+            -> Conditionals We Can Apply 
+
+            -> NOTE: Duplicates Not Allowed 
+
+            -> NOTE: Order is not preserved 
+
+        -> Sets are UUU 
+
+            -> U - Unique
+            -> U - Unordered
+            -> U - Unindex 
+
+        -> NOTE: Sets are specially used with math set operations 
+
+        -> NOTE: Sets are Mutable 
+
+    -> Frozen set are same as sets, except they are "Immutable"
+
+        -> Frozen set: READ ONLY sets 
+
+        -> NOTE: No symbol representation, only class frozenset()
