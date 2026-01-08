@@ -1157,3 +1157,119 @@
 =============
 
     -> Set Specific Operations / Methods 
+
+8th Jan 2026
+=============
+
+    -> Functional Style Programming
+
+        -> In computer science, functional programming is a programming paradigm 
+            where programs are constructed by applying and composing "functions" 
+
+    -> Functions 
+
+        -> In Python, a function is a named, "reusable block of code" that performs 
+            a specific task, takes input (arguments), processes data, 
+            and can return an output.
+
+            -> Example we used max function in previous app 
+
+    -> Why Functions 
+
+        ->  For writing modular, organized and efficient code.
+
+        -> Functions can break down complex problems into smaller and
+            simpler manageable sub tasks for promoting code modularity. 
+
+        -> Once defined a function, it can be called multiple times, so that 
+            we can achieve code reusability.
+        
+        -> Functions are defined using "def" keyword, followed by function name,
+        parenthesis(which may contain parameters), and a colon:
+        the code within the function is indented 
+
+        -> syntax
+
+            def function_name():
+                statements
+
+            def function_name(parameters):
+                statements
+
+        -> NOTE: calling function is must
+
+            function_name()
+
+    -> Python functions can be defined to accept "parameters" 
+        which can act as placeholders for values that will be 
+        passed into function when called. 
+    
+    -> Values passed to the function we call them as "arguments"
+
+    -> We use parameters to make functions dynamic in nature 
+
+    -> Based On arguments passed to functions, we got five types 
+
+        -> Positional Arguments 
+
+        -> Keywords Arguments 
+
+        -> Default Arguments 
+
+        -> Arbitrary Positional Arguments
+
+        -> Arbitrary Keywords Arguments
+
+    -> Positional Arguments
+
+        -> In Python, positional arguments are values passed to a function during 
+        its call, where the assignment of these values to the function's parameters 
+        is determined solely by their order (position) in the argument list. 
+        
+        -> The first argument in the function call is assigned to the first parameter 
+        in the function definition, the second to the second, and so on. 
+
+        -> Order Matters: If the order is incorrect, the function will receive the wrong values 
+            for its intended parameters, potentially leading to errors or unexpected behavior.
+
+    -> Keywords Arguments
+
+        -> In Python, keyword arguments are a way to pass values to a function by explicitly 
+        "naming the parameters" they correspond to, rather than relying on their position 
+            in the argument list. 
+        
+        -> This offers several advantages, primarily in terms of code readability and flexibility.
+    
+    -> Default Arguments 
+
+        -> In Python, default arguments allow you to define a function parameter 
+            with a "pre-assigned" value. 
+        
+        -> If a caller does not provide an argument for that parameter during a function call, 
+            the default value is automatically used. 
+            If an argument is provided, it overrides the default.
+
+        -> Placement Requirement: Default arguments must always be placed after 
+            any non-default (positional) arguments in the function definition. 
+            Attempting to place a non-default argument after a 
+                default argument will result in a SyntaxError.
+    
+    -> Arbitrary Positional Arguments
+
+        -> In Python, arbitrary positional arguments allow a function to accept 
+            a variable/unknown number of non-keyword arguments. 
+            This is achieved by placing an asterisk (*) before a parameter name 
+                in the function definition. 
+            
+        -> This parameter will then collect all the extra positional arguments passed 
+            to the function into a single tuple. 
+
+    -> Arbitrary Keywords Arguments
+
+        -> In Python, arbitrary keyword arguments allow a function to accept 
+            a variable/unknown number of keyword arguments. 
+            This is achieved by placing an asterisk (**) before a parameter name 
+                in the function definition. 
+
+        -> This parameter will be collected into a dictionary, where the names will be keys and 
+            values will be dictionary values  
