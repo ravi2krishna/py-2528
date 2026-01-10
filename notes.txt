@@ -1273,3 +1273,119 @@
 
         -> This parameter will be collected into a dictionary, where the names will be keys and 
             values will be dictionary values  
+
+
+10th Jan 2026
+=============
+
+    -> return keyword 
+
+        -> In Python, the "return" keyword is used within a function to send a value 
+        back to the part of the code that called the function.
+
+        -> when you don't use a return, by default a function returns None 
+
+        -> When working with function composition (function calling another function), 
+            return will be helpful 
+
+        -> If you use return, make sure it's the last part of statement to be executed
+
+        -> If you have multiple return statements, first will be considered
+
+        -> If multiple returns are present, and used with conditionals, 
+            you can control the flow 
+
+    -> Scopes in functions 
+
+        -> Scope: Inside the code blocks, where you can access variable depends on Scope
+
+            -> Local 
+
+            -> Global 
+
+        -> Local Scope
+
+            -> A local variable declared "inside the function" 
+            -> it's lifetime exists only within the function
+            -> we cannot use them outside the function    
+            -> NOTE : Parameters we are passing to the functions, are also local variables 
+
+        -> Global Scope
+
+            -> A Global variable declared "outside the function"
+            -> it's lifetime exists "within the function" as well as "outside the function"
+
+            -> As global variables can be accessed inside the functions, there can be
+            name conflicts, in this scenario the preference is given to local variables 
+
+                -> NOTE : To Access Global Variable in above scenario, use globals()
+
+            -> If you want global variables to be changed inside the function, we cannot 
+                do that directly 
+
+                -> NOTE : To change Global Variable inside function, use global keyword    
+
+    
+    -> Types Of Functions 
+
+        -> Built In Functions 
+
+        -> User Defined Functions 
+
+        -> Lambda Functions 
+
+        -> Higher Order Functions 
+
+    -> Built In Functions 
+
+        -> Pre Defined Functions, already part of "Standard Python Library" 
+
+        -> No need to create explicitly again using def keyword 
+
+        -> Just call them using function name 
+
+        -> Examples 
+
+            -> id(), type(), dir(), input(), len(), max(), min() etc 
+
+    
+    -> User Defined Functions 
+
+        -> User Defined functions, are created by Developers using def keyword 
+
+        -> Created based on Customers Requirement 
+
+        -> Examples 
+
+            -> add(), emp_info(), math_ops() etc 
+
+    
+    -> Lambda Functions (Anonymous Functions) 
+
+        -> A lambda function in Python is a small, anonymous function 
+            defined with the "lambda" keyword. 
+
+        -> Unlike standard functions defined with def, lambda functions are 
+            restricted to a "single expression", which is "implicitly returned"
+        
+        -> They are often used for "short, one-time operations" where 
+                a full function definition would be unnecessarily verbose.
+        
+        -> syntax
+
+                lambda arguments:expression
+
+        -> Using lambda we can write one liner functions called "IILE" 
+                Immediately Invoked Lambda Expression  
+
+    -> Lambda & Higher Order Functions 
+
+    -> Generally lambda functions will be "attached" with "Higher Order Functions" 
+
+    -> Higher Order Functions 
+
+        -> The goal of Higher Order Functions is to "perform operations on Iterables" 
+
+        -> Concise Code, without writing lengthy code with loops and conditionals
+
+            -> NOTE: Remember Imperative vs Declarative Style (How To Do vs What To Do) 
