@@ -274,9 +274,124 @@ print(min(data))
 
 # print(dir(__builtins__)) # checking built in 
 
-# User Defined Functions 
+# User Defined Functions i.e Without Lambda 
 def add(a,b):
     return a+b
 print(add(20,30))
-    
 
+# With Lambda
+# syntax -> lambda arguments:expression
+# lambda a,b:a+b
+print((lambda a,b:a+b)(100,200))    
+
+# Without Lambda 
+def is_even_num(num):
+    if num % 2 == 0:
+        return True 
+    else:
+        return False
+print(is_even_num(10))
+print(is_even_num(5))
+
+# With Lambda 
+print((lambda num:num % 2 == 0)(100))  
+print((lambda num:num % 2 == 0)(95))
+
+# Without Lambda 
+def employee_info(emp_name,emp_email,emp_location):
+    print(f"Hi {emp_name}, your email is {emp_email} and work location is {emp_location}")
+    
+employee_info(emp_location="hyderabad",emp_name="ravi",emp_email="ravi@gmail.com")
+
+# With Lambda 
+print((lambda emp_name,emp_email,emp_location:print(f"Hi {emp_name}, your email is {emp_email} and work location is {emp_location}"))(emp_location="new york",emp_name="john",emp_email="john@gmail.com"))  
+
+# Without map()
+# Write a script/program to take a list of numbers and return the square of list of numbers
+# [1,2,3,4,5] ==> [1,4,9,16,25]
+def square_list(numbers):
+    squared_list = []
+    for num in numbers:
+        squared_list.append(num * num)
+    return squared_list
+
+print(square_list([1,2,3,4,5]))
+
+# With map()
+# Write a script/program to take a list of numbers and return the square of list of numbers
+# [1,2,3,4,5] ==> [1,4,9,16,25]
+# syntax -> map(function, iterable)
+# syntax -> lambda arguments:expression 
+print((lambda num: num*num))
+# print(map(function,[1,2,3,4,5]))
+print(map((lambda num: num*num),[1,2,3,4,5]))
+print(list(map((lambda num: num*num),[1,2,3,4,5])))
+
+# Real World Use Case Of Working With Lambda & Higher Order Functions 
+products = [
+    {"name": "Laptop", "price": 80000, "discount": 10},
+    {"name": "Phone", "price": 50000, "discount": 5},
+    {"name": "Headphones", "price": 2000, "discount": 15},
+    {"name": "Charger", "price": 1500, "discount": 0},
+    {"name": "Camera", "price": 30000, "discount": 20},
+]
+# find me prices after discount 
+prices_after_discount = []
+for product in products:
+    price = product["price"]
+    discount = product["discount"]
+    
+    price_after_discount = price - (price * discount / 100)
+    prices_after_discount.append(price_after_discount)
+
+print(prices_after_discount)
+
+# Real World Use Case Of Working With Lambda & Higher Order Functions 
+# syntax -> map(function, iterable)
+# syntax -> lambda arguments:expression 
+# lambda product: product["price"] - product["price"] * product["discount"] / 100
+# lambda p: p["price"] - p["price"] * p["discount"] / 100
+# print(map(function,[1,2,3,4,5]))
+print(list(map((lambda p: p["price"] - p["price"] * p["discount"] / 100),products)))
+
+# without filter()
+# Write a script/program to take a list of numbers and return the even list of numbers 
+# [1,2,3,4,5,6,7,8,9,10] ==> [2,4,6,8,10]
+def even_list(numbers):
+    evened_list = []
+    for num in numbers:
+        if num % 2 == 0:
+            evened_list.append(num)
+    return evened_list
+
+print(even_list([1,2,3,4,5,6,7,8,9,10]))
+
+# With filter()
+# Write a script/program to take a list of numbers and return the even list of numbers 
+# [1,2,3,4,5,6,7,8,9,10] ==> [2,4,6,8,10]
+# syntax -> filter(function, iterable)
+# syntax -> lambda arguments:expression 
+print((lambda num: num % 2 == 0))
+# print(map(function,[1,2,3,4,5]))
+print(filter((lambda num: num % 2 == 0),[1,2,3,4,5,6,7,8,9,10]))
+print(list(filter((lambda num: num % 2 == 0),[1,2,3,4,5,6,7,8,9,10])))
+
+
+# Real World Use Case Of Working With Lambda & Higher Order Functions 
+products = [
+    {"name": "Laptop", "price": 80000, "discount": 10},
+    {"name": "Phone", "price": 50000, "discount": 5},
+    {"name": "Headphones", "price": 2000, "discount": 15},
+    {"name": "Charger", "price": 1500, "discount": 0},
+    {"name": "Camera", "price": 30000, "discount": 20},
+]
+# find me premium products i.e a product with price above 25000 
+premium_products = []
+for product in products:
+    price = product["price"]
+    if price > 25000:
+        premium_products.append(product)
+
+print(premium_products)
+
+print(list(filter((lambda p: p["price"] > 25000),products)))
