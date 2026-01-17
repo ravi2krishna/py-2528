@@ -1418,3 +1418,80 @@
                         filter(function, iterable)
 
                 -> NOTE: Just Like Using For Loop with Conditions 
+
+
+17th Jan 2026
+=============
+
+    -> Functional Style With CRUD Application
+
+    -> Additionally Implement "Search Students By Skills" Using
+        Lambda & Higher Order Functions Approach 
+
+    -> Modules 
+
+        -> A module is simple python file which contains python definitions 
+
+            -> variables 
+            -> functions 
+            -> classes 
+            -> etc 
+        
+        -> Modules Allow you to reuse code
+
+            -> NOTE: Reusability in terms of code blocks go for functions 
+
+            -> NOTE: Reusability in terms of files go for modules 
+    
+    -> Types Of Modules
+
+        -> Inbuilt Modules 
+
+            -> Provided as part of standard python library 
+
+        -> User Defined Modules
+
+            -> Created By User/Developer 
+
+            -> import using file name 
+
+        -> External Modules 
+
+            -> Provided by 3rd party vendors 
+
+                -> https://pypi.org
+
+                -> pip install module_name 
+
+                -> pip install pandas 
+
+                -> pip install requests 
+
+                https://pypi.org/project/requests/
+
+    
+    -> syntax
+
+        -> import module (imports complete module i.e loading all Functionalities) 
+
+        -> from module import specific_functionality (import only what you need)  (recommended)
+
+    
+    -> Reusability
+
+        -> A Block Of Code - functions (call with function_name)
+
+        -> A File Of Code - modules (call with file_name)
+
+        -> A Folder Of Code - packages (call with folder_name)
+
+    -> Package 
+
+        -> A folder with multiple "modules" (multiple python files)   
+
+        -> A package contains a special file named as __init__.py 
+
+        -> __init__.py, it can be blank, but generally we keep start up 
+                initial data or start up configurations 
+            
+        -> In order to use package, use name of the folder
