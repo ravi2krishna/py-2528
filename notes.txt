@@ -1495,3 +1495,105 @@
                 initial data or start up configurations 
             
         -> In order to use package, use name of the folder
+
+
+20th Jan 2026
+=============
+
+    -> File Management With Python 
+
+        -> After Executing 12_functions/app.py we can confirm 
+        data is being stored "Temporarily" 
+
+        -> All the activities we performed so far, we were dealing with 
+        "Non-Persistent" Storage (RAM/MEMORY)
+
+            -> "Non-Persistent" Storage is "Temporary" 
+
+        -> Now the Requirement is to work with "Persistent" Storage (HARD DISK)
+
+            -> "Persistent" Storage is "Permanent"
+
+    -> File Operations 
+
+        -> CRUD 
+
+            -> Create File 
+            -> Read File 
+            -> Update File 
+            -> Delete File 
+
+    -> To work with any type of file, python has provided 
+
+        -> open() function
+
+            -> Modes 
+
+                -> r - read 
+                -> w - write (overwrites data)
+                -> a - append (preserve old data and then add new data)
+                -> etc 
+
+        -> syntax - 1
+
+            open("file_path","mode"):
+                statements 
+            
+            open("file.txt","r"):
+                statements 
+            
+            -> NOTE: Here we need to explicitly close files after operations are performed 
+
+        -> syntax - 2 (recommended way)
+
+            with open("file_path","mode") as alias_name:
+                statements 
+            
+            with open("file.txt","r") as file_data:
+                statements 
+            
+            -> NOTE: Here implicitly files are closed, after operations are performed 
+
+
+    -> File Reading "r" mode 
+
+        -> read()
+        -> readline()
+        -> readlines()
+
+    -> File Writing "w" mode 
+
+        -> write()
+        -> writelines()
+
+        -> NOTE: In "w" mode, previous data is overridden 
+
+    -> File Writing "a" mode [ Append Mode ]
+
+        -> NOTE: In "a" mode, previous data is not overridden 
+
+    -> Folder / Directory Management 
+
+        -> "os" module 
+        -> "shutil" module 
+
+    -> Create Folders & Delete Folders can be done with above modules 
+
+    -> NOTE: We don't work with text files regularly in real world 
+
+    -> Working with "csv" data i.e Data Oriented Courses use csv files a lot
+
+    -> To work with csv files we have "csv" module
+
+        -> Very commonly used in "Data Oriented Applications"
+
+        -> https://www.datablist.com/learn_images/csv/google_sheet_csv.png
+
+        -> https://www.slashgear.com/img/gallery/csv-files-explained-what-they-are-and-how-to-open-them/what-are-csv-files-1699455969.jpg
+
+    
+    -> For Fixed Data Sets, we can use "reader" functionality from csv module
+
+            -> students.csv file
+
+    -> For Changing Data Sets, we can use DictReader functionality from csv module
