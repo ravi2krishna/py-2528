@@ -1597,3 +1597,55 @@
             -> students.csv file
 
     -> For Changing Data Sets, we can use DictReader functionality from csv module
+
+
+22nd Jan 2026
+=============
+
+    -> Reading CSV Data
+
+        -> reader 
+        -> DictReader
+
+    -> Writing CSV Data 
+
+        -> writer 
+        -> DictWriter 
+
+    -> Working With JSON Data / Files 
+
+    -> JSON (JavaScript Object Notation) is a lightweight, human-readable, text-based format 
+    for storing and exchanging structured data, using key-value pairs and arrays, 
+    making it ideal for web applications, APIs and Configuration Files(Cloud & DevOps)
+
+    -> JSON represents data as key-value pairs 
+
+        -> https://d33wubrfki0l68.cloudfront.net/0e4bef351d9e23cdb33adba9e491f73db3c9c50c/7dcfe/data.png
+
+        -> https://jsoneditoronline.org/images/news/smart_json_formatting.png
+
+        -> Full Stack Development 
+
+            -> https://d274cmdd0goq94.cloudfront.net/wp-content/uploads/2022/01/3.jpeg
+
+            -> https://images.velog.io/images/kevinkim2586/post/20923cbf-a83e-4857-968f-0b6dffde9a8d/Screen%20Shot%202021-01-14%20at%202.27.47%20PM.png
+
+            -> https://docs.tomorrow.io/reference/weather-forecast
+
+            -> JSON is widely used in Application Development (API's)
+
+        -> Cloud / DevOps Scripting 
+
+            -> https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-ec2-vpc.html
+
+    -> Python has provided "json" module in standard library
+
+    -> JSON Operations with json module 
+
+        -> json.dump() - Serializes a Python object to a JSON-formatted file (writes to a file pointer).
+
+        -> json.load()	Deserializes a JSON-formatted file to a Python object (reads from a file pointer).
+
+        -> json.dumps()	Serializes a Python object to a JSON-formatted string ("dump string").
+
+        -> json.loads()	Deserializes a JSON-formatted string to a Python object ("load string").
