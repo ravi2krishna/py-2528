@@ -1649,3 +1649,23 @@
         -> json.dumps()	Serializes a Python object to a JSON-formatted string ("dump string").
 
         -> json.loads()	Deserializes a JSON-formatted string to a Python object ("load string").
+
+
+24th Jan 2026
+=============
+
+    -> Student Management System - Saving Data To File On Disk (Persistent)
+
+    -> Exception Handling 
+
+        -> Exception: It's an "Error", which might occur during the program execution 
+
+        -> By default when python encounters an Error, it abruptly "STOPS" the program execution
+    
+    -> To change the above default behavior and handle Exception by yourself, go with following 
+
+        -> try: used to keep the code, that will cause error 
+
+        -> except: used to keep the code that should run, when errors occur 
+
+        -> NOTE: Try statement must have at least one except or finally clause
