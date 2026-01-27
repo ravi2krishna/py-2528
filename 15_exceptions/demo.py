@@ -69,3 +69,72 @@ for num in data:
         print("OOPS! You Should Not Divide Number With Zero")
 print("Program Execution Completed")
 print("=" * 50)
+
+# else keyword in Exception Handling
+print("Program Execution Started")
+num1 = 10
+num2 = 5
+try:
+    print(num1/num2)
+except:
+    print("OOPS! We Got An Error - Check Below Link For Info")
+    print("https://en.wikipedia.org/wiki/Division_by_zero")
+else:
+    print("Calculation Was Successful")
+
+print("Program Execution Completed")
+print("=" * 50)
+
+# finally keyword in Exception Handling
+print("Program Execution Started")
+num1 = 10
+num2 = 5
+try:
+    print(num1/num2)
+except:
+    print("OOPS! We Got An Error - Check Below Link For Info")
+    print("https://en.wikipedia.org/wiki/Division_by_zero")
+else:
+    print("Calculation Was Successful")
+finally:
+    print("Program Execution Completed")
+print("=" * 50)
+
+# Create Custom Exception
+class MyError(Exception):
+    pass 
+
+# Voting App 
+age = int(input("Enter Age: "))
+if age < 18:
+    print("You Cannot Vote")
+else:
+    print("You Can Vote")
+
+# Custom AgeError 
+class AgeError(Exception):
+    pass 
+
+# Voting App 
+age = int(input("Enter Age: "))
+if age < 18:
+    raise AgeError
+else:
+    print("You Can Vote")
+    
+# Voting App 
+age = int(input("Enter Age: "))
+if age < 18:
+    raise AgeError("Your Age Must be 18 and above")
+else:
+    print("You Can Vote")
+    
+# Voting App Handle Exception
+age = int(input("Enter Age: "))
+try:    
+    if age < 18:
+        raise AgeError("Your Age Must be 18 and above")
+except:
+    print("You are not 18 Yet")    
+else:
+    print("You Can Vote")

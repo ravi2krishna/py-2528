@@ -1669,3 +1669,173 @@
         -> except: used to keep the code that should run, when errors occur 
 
         -> NOTE: Try statement must have at least one except or finally clause
+
+
+27th Jan 2026
+=============
+
+    -> Exception Handling Continued 
+
+        -> else: used to keep the code that should run, if No Exception was raised in try block  
+
+        -> finally: used to keep the code that should run, whether an exception raised or not 
+
+    -> Earlier we worked with In built Exceptions provided as part of 
+    python standard library (ZeroDivisionError, IndexError, ValueError etc)
+
+        -> https://docs.python.org/3/library/exceptions.html 
+
+    -> But sometimes you need your "own custom errors" that describes a situation 
+    Specific to your program 
+    
+    -> You create a custom exception by "defining a class" that inherits 
+    from Python’s built-in "Exception" class. 
+        This concept is connected to inheritance.
+
+        -> All user-defined exceptions should also be derived from Exception class.
+
+        -> syntax
+
+            class MyCustomError(Exception):
+                pass 
+
+        -> raise: keyword in Python is used to manually trigger or "raise" an exception 
+        when an error occurs in your code. It allows a developer to stop the 
+        normal program flow and provide information about what went wrong. 
+
+            -> raise ExceptionName("Optional error message")
+
+    
+    -> OOP - Object Oriented Programming
+
+        -> OOP, or Object-Oriented Programming, is a programming model/paradigm 
+        that organizes code around "objects" which are software entities 
+        that contain both data (attributes/variables) and the methods(functions) 
+        that operate on that data.
+
+    -> Earlier (Functional Style)
+
+        -> Writing Long List Of Instruction (task oriented)
+
+    -> Moving Forward 
+
+            -> Thinking in terms of real world entities (objects)
+
+                -> Object - Data (attributes/variables)
+
+                -> Object - Behavior (methods/functions)
+
+            -> Writing code that follows Object Oriented Design 
+
+                -> Focus is on objects and their relationships, not just functions(tasks)
+
+                -> We don't think about steps, we think about "who does what"
+
+    
+    Compare Functional vs OOP 
+
+                            Functional Style                        Object Oriented Style 
+
+    -> Focus                Step by step functions                  Real World Objects 
+
+    -> Data & Function      Separate                                Combined inside a class 
+
+    -> Code Organization    One Big Script                          Multiple Reuseable Classes 
+
+    -> Reusability          Harder                                  Easy as for Inheritance
+
+    -> Maintenance          Complex as code grows                   More Cleaner 
+
+
+    -> Four Pillars Of OOPS
+
+        -> Inheritance 
+
+            -> Using Inheritance we get "Reusability"
+
+        -> Encapsulation 
+
+            -> Binding Data & Behavior Together with Data Hiding 
+
+        -> Abstraction 
+
+            -> Hiding Complexity, and show only what user needs 
+
+        -> Polymorphism 
+
+            -> For Extensibility, One Entity has multiple forms 
+
+    
+    -> To Work With OOP, learn with below order 
+
+        -> Classes 
+
+        -> Objects 
+
+        -> Methods 
+
+        -> Constructors   
+
+        -> Instance Members 
+
+        -> Class Members 
+
+        -> Static Members 
+
+        -> Inheritance 
+
+        -> Encapsulation 
+
+        -> Abstraction
+
+        -> Polymorphism
+
+    
+    
+    -> Object 
+
+        -> In terms of real world, "everything" is object
+
+        -> An object has two entities
+
+            -> An Object "has" something like Characteristics / Properties (VARIABLES) - CAR 
+
+                -> Car has brand 
+                -> Car has price
+                -> Car has color
+                -> Car has etc
+
+            -> An Object "does" something like Behaviors / Actions (METHODS) - CAR
+
+                -> Car does drive forward 
+                -> Car does drive backward 
+                -> Car does sound horn 
+                -> Car does etc 
+        
+        -> How To Create Object ?
+
+            -> We need a "class" to create objects 
+
+    
+    -> Class 
+
+        -> A class is "blueprint" for creating objects 
+
+        -> A class will define, what Characteristics & Behaviors, an object should posses 
+
+        -> A Car class can define 
+
+            -> What a car has (Characteristics)
+            
+            -> What a car can do (Behaviors)
+
+
+    -> Classes & Objects Syntax 
+
+        class ClassName:
+            Characteristics & Behaviors
+
+        object = ClassName()
+
+    -> In Python Classes are automatically called when we execute file 
+    
